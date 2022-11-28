@@ -6,95 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintPai"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30dp"
-        >
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txtCadastresuaconta"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="Faca seu login"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:fontFamily="@font/manjaribold"
+            android:padding="5dp"
             android:text="Nome"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@id/UserName"
-            android:layout_margin="10dp"
-            app:layout_constraintStart_toStartOf="@+id/UserName" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:id="@+id/UserName"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
             android:autofillHints="name"
+
             android:elevation="1dp"
-            android:hint="Tonhão69"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="João Silva"
             android:inputType="textPersonName"
             android:lines="1"
             android:maxLines="1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3"
-            android:layout_margin="20dp"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+            android:padding="18dp" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/txtSenha"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/manjaribold"
+            android:padding="5dp"
             android:text="Senha"
-            app:layout_constraintBottom_toTopOf="@id/UserPass"
-            app:layout_constraintLeft_toLeftOf="@id/UserName"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_margin="10dp"
-             />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/UserPass"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <EditText
+            android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="name"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:autofillHints="password"
+
             android:elevation="1dp"
-            android:hint="********"
-            android:inputType="textPersonName"
-            android:lines="1"
-            android:maxLines="1"
-            app:layout_constraintEnd_toEndOf="@+id/UserName"
-            app:layout_constraintStart_toStartOf="@+id/UserName"
-            app:layout_constraintTop_toBottomOf="@id/UserName"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            app:endIconMode="password_toggle"
-            >
+            android:fontFamily="@font/poppinsregular"
+            android:hint="12345"
+            android:inputType="textPassword"
+            android:padding="18dp" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Esqueceu sua senha?"
-            app:layout_constraintStart_toStartOf="@+id/UserPass"
-            app:layout_constraintTop_toBottomOf="@+id/UserPass"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#ffd200"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="@font/poppinssemibold"
+            android:padding="8dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </FrameLayout>
