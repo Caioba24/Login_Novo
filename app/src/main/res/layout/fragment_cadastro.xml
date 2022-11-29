@@ -6,183 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".CadastroFragment">
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="10dp"
-        android:fitsSystemWindows="true"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:fillViewport="true">
 
-
-        <TextView
-            android:id="@+id/txtNome"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:fontFamily="@font/manjaribold"
-
-            android:text="Nome"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/UserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:autofillHints="name"
-            android:background="@drawable/bordaredonda"
-            android:elevation="1dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="E-mail"
-            android:inputType="textPersonName"
-            android:lines="1"
-            android:maxLines="1"
-            android:padding="18dp" />
-
-        <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/manjaribold"
-            android:text="Senha"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:autofillHints="password"
-            android:background="@drawable/bordaredonda"
-            android:elevation="1dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="12345"
-            android:inputType="textPassword"
-            android:padding="18dp" />
-
-        <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/manjaribold"
-            android:text="E-mail"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:autofillHints="password"
-            android:background="@drawable/bordaredonda"
-            android:elevation="1dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="12345"
-            android:inputType="textPassword"
-            android:padding="18dp" />
-
-        <TextView
-            android:id="@+id/txtSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/manjaribold"
-            android:text="Telefone"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/edtSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:autofillHints="password"
-            android:background="@drawable/bordaredonda"
-            android:elevation="1dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="12345"
-            android:inputType="textPassword"
-            android:padding="18dp" />
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="10dp"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
 
 
-        <Button
-            android:id="@+id/btnCadastrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/redondo_layout"
-            android:backgroundTint="#ffd200"
-            android:fontFamily="@font/poppinssemibold"
-            android:padding="15dp"
-            android:text="Cadastrar"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Esqueceu sua senha? Clique aqui" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:src="@drawable/twitter"
-                app:backgroundTint="#FBFBFB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginStart="7dp"
+                android:fontFamily="@font/manjaribold"
+                android:text="Nome"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton2"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:src="@drawable/google"
-                app:backgroundTint="#FBFBFB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:autofillHints="name"
+                android:background="@drawable/bordaredonda"
+                android:elevation="1dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="E-mail"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="18dp" />
 
-                />
+            <TextView
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/face"
-                app:backgroundTint="#FBFBFB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/manjaribold"
+                android:text="Senha"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:autofillHints="password"
+                android:background="@drawable/bordaredonda"
+                android:elevation="1dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="12345"
+                android:inputType="textPassword"
+                android:padding="18dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/manjaribold"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:autofillHints="password"
+                android:background="@drawable/bordaredonda"
+                android:elevation="1dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="12345"
+                android:inputType="textPassword"
+                android:padding="18dp" />
+
+            <TextView
+                android:id="@+id/txtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/manjaribold"
+                android:text="Telefone"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:autofillHints="password"
+                android:background="@drawable/bordaredonda"
+                android:elevation="1dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="12345"
+                android:inputType="textPassword"
+                android:padding="18dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/manjaribold"
+                android:text="Telefone"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:autofillHints="password"
+                android:background="@drawable/bordaredonda"
+                android:elevation="1dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="12345"
+                android:inputType="textPassword"
+                android:padding="18dp" />
+
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/redondo_layout"
+                android:backgroundTint="#ffd200"
+                android:fontFamily="@font/poppinssemibold"
+                android:padding="15dp"
+                android:text="Cadastrar"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

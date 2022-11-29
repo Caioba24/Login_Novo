@@ -16,60 +16,61 @@
         android:fitsSystemWindows="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="5dp"
+        >
 
 
-        <TextView
-            android:id="@+id/txtNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:fontFamily="@font/manjaribold"
 
-            android:text="Nome"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
 
-        <EditText
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
             android:autofillHints="name"
-            android:background="@drawable/bordaredonda"
             android:elevation="1dp"
             android:fontFamily="@font/poppinsregular"
-            android:hint="E-mail"
             android:inputType="textPersonName"
-            android:lines="1"
             android:maxLines="1"
-            android:padding="18dp" />
+            app:boxStrokeColor="#9c9c9c"
+            app:hintTextColor="#9c9c9c"
 
-        <TextView
-            android:id="@+id/txtSenha"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="E-mail"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UserPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/manjaribold"
-            android:text="Senha"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/edtSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
             android:autofillHints="password"
-            android:background="@drawable/bordaredonda"
             android:elevation="1dp"
             android:fontFamily="@font/poppinsregular"
-            android:hint="12345"
             android:inputType="textPassword"
-            android:padding="18dp" />
+            android:maxLines="1"
+            app:boxStrokeColor="#9c9c9c"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#9c9c9c"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Senha"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
@@ -81,7 +82,7 @@
             android:background="@drawable/redondo_layout"
             android:backgroundTint="#ffd200"
             android:fontFamily="@font/poppinssemibold"
-            android:padding="15dp"
+            android:padding="10dp"
             android:text="Entrar"
             android:textAllCaps="false"
             android:textColor="@color/black"
