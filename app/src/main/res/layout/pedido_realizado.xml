@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F1F1"
+    android:background="@drawable/semfundo"
+    android:backgroundTint="#7463410E"
     tools:context=".PedidoRealizado">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,8 +22,9 @@
             android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_margin="1dp"
+            android:layout_margin="3dp"
             android:background="@drawable/redondo_layout"
+            android:backgroundTint="#FAFAFA"
             android:elevation="1dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.9"
