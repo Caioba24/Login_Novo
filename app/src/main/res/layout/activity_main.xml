@@ -52,7 +52,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tabIndicator="@drawable/indicador_tab"
-            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorAnimationMode="linear"
             app:tabIndicatorColor="#FED200"
             app:tabIndicatorGravity="stretch"
             app:tabSelectedTextColor="@color/black">

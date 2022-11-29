@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,17 +14,10 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="10dp"
         android:fitsSystemWindows="true"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-
-        <TextView
-            android:id="@+id/txtCadastresuaconta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsregular"
-            android:gravity="center"
-            android:text="Cadastre sua conta"
-            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtNome"
@@ -31,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:fontFamily="@font/manjaribold"
-            android:padding="5dp"
+
             android:text="Nome"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -43,13 +37,63 @@
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
             android:autofillHints="name"
-
+            android:background="@drawable/bordaredonda"
             android:elevation="1dp"
             android:fontFamily="@font/poppinsregular"
-            android:hint="João Silva"
+            android:hint="E-mail"
             android:inputType="textPersonName"
             android:lines="1"
             android:maxLines="1"
+            android:padding="18dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/manjaribold"
+            android:text="Senha"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:autofillHints="password"
+            android:background="@drawable/bordaredonda"
+            android:elevation="1dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="12345"
+            android:inputType="textPassword"
+            android:padding="18dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/manjaribold"
+            android:text="E-mail"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:autofillHints="password"
+            android:background="@drawable/bordaredonda"
+            android:elevation="1dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="12345"
+            android:inputType="textPassword"
             android:padding="18dp" />
 
         <TextView
@@ -57,10 +101,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/manjaribold"
-            android:padding="5dp"
-            android:text="Senha"
+            android:text="Telefone"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -71,83 +114,75 @@
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
             android:autofillHints="password"
-
+            android:background="@drawable/bordaredonda"
             android:elevation="1dp"
             android:fontFamily="@font/poppinsregular"
             android:hint="12345"
             android:inputType="textPassword"
             android:padding="18dp" />
 
-        <TextView
-            android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:fontFamily="@font/manjaribold"
-            android:padding="5dp"
-            android:text="Email"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/Email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:autofillHints="name"
-
-            android:elevation="1dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="email@email.com"
-            android:inputType="textEmailAddress"
-            android:lines="1"
-            android:maxLength="40"
-            android:maxLines="1"
-            android:padding="18dp" />
-
-        <TextView
-            android:id="@+id/txtCelular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/manjaribold"
-            android:padding="5dp"
-            android:text="Celular"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/edtCelular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:autofillHints="password"
-
-            android:elevation="1dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="+5511912345678"
-            android:inputType="phone"
-            android:maxLength="13"
-            android:padding="18dp" />
 
         <Button
             android:id="@+id/btnCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#ffd200"
-            android:background="@drawable/redondo_layout"
             android:layout_marginTop="25dp"
+            android:background="@drawable/redondo_layout"
+            android:backgroundTint="#ffd200"
             android:fontFamily="@font/poppinssemibold"
-            android:padding="8dp"
+            android:padding="15dp"
             android:text="Cadastrar"
-            android:textColor="@color/black"
             android:textAllCaps="false"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Esqueceu sua senha? Clique aqui" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/twitter"
+                app:backgroundTint="#FBFBFB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/google"
+                app:backgroundTint="#FBFBFB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/face"
+                app:backgroundTint="#FBFBFB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </FrameLayout>
