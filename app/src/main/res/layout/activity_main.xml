@@ -30,14 +30,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/containerCons"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/curvado"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_percent="0.81"
+        app:layout_constraintHeight_percent="0.85"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,15 +47,16 @@
             android:id="@+id/tab_cadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="5dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:tabIndicator="@drawable/indicador_tab"
             app:tabIndicatorAnimationMode="elastic"
             app:tabIndicatorColor="#FED200"
             app:tabIndicatorGravity="stretch"
-            app:tabSelectedTextColor="@color/black"
-            >
+            app:tabSelectedTextColor="@color/black">
+
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,14 +68,20 @@
                 android:text="CADASTRO" />
 
         </com.google.android.material.tabs.TabLayout>
-        
+
         <androidx.viewpager2.widget.ViewPager2
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/view_pager"
-            android:layout_below="@id/tab_cadastro"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_cadastro"
+            app:layout_constraintVertical_bias="0" />
 
 
-    </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
