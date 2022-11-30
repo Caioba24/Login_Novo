@@ -39,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+            viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+                @Override
+                public void onPageSelected(int position) {
+                    super.onPageSelected(position);
+                    tabLayout.getTabAt(position).select();
+                }
+            });
     }
+
 }
